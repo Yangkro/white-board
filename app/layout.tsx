@@ -16,10 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <ConvexClientProvider>
-        <body className={inter.className}>{children}</body>
-      </ConvexClientProvider>
+    <html lang="zh-CN">
+      <body className={inter.className}>
+        <ConvexClientProvider>
+          {children}
+        </ConvexClientProvider>
+      </body>
     </html>
   );
 }
